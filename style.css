@@ -62,6 +62,9 @@ a {
   text-decoration: none;
   list-style: none;
 }
+.gamb{
+  display: none;
+}
 .navbar {
   padding-top: 4.3rem;
   display: flex;
@@ -69,6 +72,9 @@ a {
   justify-content: space-between;
   padding-bottom: 3rem;
   margin-bottom: 4.3rem;
+}
+.logo{
+  width: 23.6rem;
 }
 .navbar__list {
   display: flex;
@@ -208,7 +214,7 @@ font-weight: 900;
 line-height: 4.8rem;
 color: var(--white-color);
 }
-.choose__cont p{
+.choose__cont p, .ch_para{
     font-size: 1.6rem;
 font-style: normal;
 font-weight: 400;
@@ -333,4 +339,119 @@ margin-top: 6.4rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
+}
+
+@media screen and (max-width: 376px){
+  .navbar{
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .logo{
+    width: 163px;
+  }
+  .navbar__list{
+    display: none;
+  }
+  .gamb{
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+    .back__cont {
+      background-image: url("./images/res376.png");
+      background-repeat: no-repeat;
+      padding-bottom: 10rem;
+      background-size: cover;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
+      padding-top: 10rem;
+      margin-bottom: 12.3rem;
+      width: 327px;
+      height: 500px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .back__cont h1{
+    color: var(--white-color);
+text-align: center;
+width: 279px;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: 40px; /* 100% */
+  }
+  .back__cont p {
+    width: 279px;
+    text-align: center;
+  }
+  .collection h1 {
+    font-size: 35px;
+  }
+  .img__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+  .choose__cont{
+    padding: 15px 0px;
+  }
+  .ch_para{
+    display: none;
+  }
+  .choose__cont h1 {
+    margin-top: 25px;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    width: 279px;
+  }
+  .workline{
+    text-align: center;
+  }
+  .work__cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+  }
+  .no1 h3{
+    font-size: 28px;
+  }
+  .circle, .circle1, .circle1::before, .circle2{
+    display: none;
+  }
+  .footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foot-navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 327px;
+    height: 346px;
+  }
+  .container{
+   
+    padding: 0px;
+  }
+   .header, .back, .collection, .works, .choose, .footer{
+    width: 100%;
+    margin: 0 auto;
+   }
 }
