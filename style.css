@@ -63,6 +63,7 @@ a {
 }
 .gamb {
   display: none;
+  cursor: pointer;
 }
 .navbar {
   padding-top: 4.3rem;
@@ -94,6 +95,41 @@ a {
 }
 .navbar__link2:hover {
   color: var(--white-color);
+}
+
+.close,
+.gamb {
+  border: none;
+  background: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+.gamb-menu {
+  width: 320px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  z-index: 1000 !important;
+  background-color: #66d2cf;
+  position: absolute !important;
+  top: 33px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 55px;
+  padding-right: 55px;
+  left: 5px;
+  transition: all 0.9s ease-in;
+  font-size: 50px;
+  transform: translateY(-110%);
+}
+.menu-toggle {
+  transform: translateY(0%);
+  transition: all 0.9s ease-in;
+}
+.gamb-menu{
+  display: none;
 }
 .back {
   width: 100%;
@@ -528,7 +564,6 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
   }
   .foot-navbar {
     display: flex;
@@ -536,12 +571,11 @@ a {
     align-items: center;
     max-width: 992px;
     height: 270px;
-    
   }
-.foot-cont{
-  width: 100%;
-  max-width: 992px;
-}
+  .foot-cont {
+    width: 100%;
+    max-width: 992px;
+  }
   .header,
   .back,
   .collection,
@@ -556,6 +590,9 @@ a {
     padding-left: 39px;
     padding-right: 39px;
     padding-top: 40px;
+  }
+  .container {
+    max-width: 100%;
   }
   .back__cont {
     background-image: url("./images/res768.png");
@@ -657,7 +694,6 @@ a {
   }
 
   .foot-cont {
-  
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -805,9 +841,9 @@ a {
   .footer {
     max-width: 575px;
   }
- .ch_para  {
-  display: none !important;
- }
+  .ch_para {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 376px) {
   .navbar {
@@ -937,7 +973,16 @@ a {
     max-width: 327px;
     height: 346px;
   }
-
+  .foot-navbar .navbar__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .header,
   .back,
   .collection,
@@ -949,5 +994,8 @@ a {
   .container {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .gamb-menu {
+    display: block;
   }
 }
